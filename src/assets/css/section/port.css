@@ -1,14 +1,14 @@
 #port {
     width: 100%;
     margin-top: 30vh;
-    overflow-x: hidden; /* 가로 스크롤을 숨김 */
+    overflow: hidden;
 }
 .port__inner {
     padding: 16px;
 }
 .port__title {
     width: 100%;
-    height: auto;
+    height: 5vw;
     font-size: 4vw;
     font-weight: 900;
     line-height: 1.6;
@@ -26,15 +26,45 @@
 }
 .port__wrap {
     display: flex;
-    flex-wrap: wrap; /* 컨텐츠를 세로로 배치 */
-    width: 100%;
+    flex-wrap: wrap;
+    width: 7000px;
 }
 .port__item {
-    flex: 1 1 300px; /* 유연한 너비 설정 */
-    height: auto; /* 높이를 자동으로 설정 */
+    width: 500px;
+    height: 70vh;
     background-color: var(--subBg100);
     padding: 2.5rem;
-    margin: 10px; /* 항목 간의 간격 설정 */
+    margin-right: 20px;
+}
+.port__item.p1 {
+    background-color: var(--subBg100);
+}
+.port__item.p2 {
+    background-color: var(--subBg200);
+}
+.port__item.p3 {
+    background-color: var(--subBg300);
+}
+.port__item.p4 {
+    background-color: var(--subBg400);
+}
+.port__item.p5 {
+    background-color: var(--subBg500);
+}
+.port__item.p6 {
+    background-color: var(--subBg100);
+}
+.port__item.p7 {
+    background-color: var(--subBg200);
+}
+.port__item.p8 {
+    background-color: var(--subBg300);
+}
+.port__item.p9 {
+    background-color: var(--subBg400);
+}
+.port__item.p10 {
+    background-color: var(--subBg500);
 }
 .port__item .num {
     font-size: 2rem;
@@ -54,7 +84,7 @@
     transition: all 0.3s;
 }
 .port__item .img:hover img {
-    filter: saturate(100%);
+    filter: saturate(100%)
 }
 .port__item .title {
     font-size: 1.5rem;
@@ -75,11 +105,6 @@
     padding: 0.625rem 1.5rem;
     margin-top: 1.5rem;
 }
-.port__item .site:hover {
-    background-color: var(--black100);
-    color: var(--white);
-}
-
 @media (max-width: 800px){
     .port__title {
         width: 100%;
@@ -89,12 +114,10 @@
         top: 68px;
         z-index: 1000;
         background-color: var(--mainBg-color);
-    }
-    .port__wrap {
-        flex-wrap: wrap;
+
     }
     .port__item {
-        flex: 1 1 100%;
+        width: 400px;
         padding: 40px 30px;
         height: auto;
     }
